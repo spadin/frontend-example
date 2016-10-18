@@ -1,0 +1,11 @@
+version: '2'
+services:
+  frontend:
+    build: .
+    volumes:
+      - .:/var/app/
+      - node_modules:/var/app/node_modules
+    command: >
+      echo 'Note: Please use bin/start to run'
+volumes:
+  node_modules: {}

@@ -1,0 +1,6 @@
+#! /usr/bin/env sh
+
+cd "`dirname "$0"`/.."
+
+docker-compose run --rm --publish 3000:3000 -e HTTPS=$HTTPS frontend \
+  npm start
